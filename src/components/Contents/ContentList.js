@@ -3,17 +3,17 @@ import React from 'react';
 
 class ContentList extends React.Component{
     constructor(props){
-      super(props);
+        super(props);
 
     }
 
     render(){
-      return(
-        <div>
-          <h1>content ContentList</h1>
-
-        </div>
-      )
+        return(
+            <div onClick = {this.props.onClick}>
+                <h3>{this.props.content.title}</h3>
+                <h4>{this.props.content.contentText}</h4>
+            </div>
+        )
     }
 
 }
